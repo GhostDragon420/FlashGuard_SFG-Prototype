@@ -1,0 +1,15 @@
+{
+  "platform": {
+    "board": "ROG STRIX Z490-H GAMING",
+    "vendor": "ASUS",
+    "min_bios": "2401"
+  },
+  "me": {
+    "required": true,
+    "min_version": "2316.5.0.0"
+  },
+  "file": {
+    "path": "samples/ROG-Z490H-3201.CAP",
+    "sha256": ""
+  }
+}
