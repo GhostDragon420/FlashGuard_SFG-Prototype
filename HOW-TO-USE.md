@@ -1,6 +1,7 @@
-===================================+
-SFG-FlashGuard v0.1 Prototype
-====================================
+ -------------------------------------
+ =========================================
+ SFG-FlashGuard v0.1 Prototype
+ =========================================
 
 This is an early prototype of Sync-First Gate(SFG) as a Read-Only BIOS/Firmware data tool.
 It does NOT flash or change anything on your PC — it only reads and logs data.
@@ -60,5 +61,6 @@ remember your chosen boot device in a real version later.
 ------------------------------------
 Jon Merriman — Sync-First Essentials / SFG Framework
 All rights reserved © 2025
+
 
 
