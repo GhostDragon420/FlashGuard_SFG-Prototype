@@ -1,0 +1,62 @@
+====================================
+SFG-FlashGuard v0.1 (Launcher Added)
+====================================
+
+This is an early prototype of Sync-First Gate(SFG) as a read-only BIOS/Firmware data tool.
+It does NOT flash or change anything on your PC — it only reads and logs data.
+
+------------------------------------
+🧠 What it does
+------------------------------------
+- Collects a hardware + BIOS snapshot (safe read-only)
+- Checks a sample firmware file for compatibility
+- Generates a post-flash "restore plan" (no flashing)
+
+------------------------------------
+💻 System requirements
+------------------------------------
+• Windows 10 or 11 (32-bit or 64-bit)
+• Python 3.10 or newer installed
+
+✅ Works on both x64 and x86 Windows systems.
+Just make sure your Python version matches your Windows type:
+   - 64-bit Windows → 64-bit Python
+   - 32-bit Windows → 32-bit Python
+
+------------------------------------
+⚙️ How to use
+------------------------------------
+1. Unzip the downloaded file anywhere.
+2. Open the folder in File Explorer.
+3. Right-click inside the folder → “Open in Terminal” or “Open PowerShell window here”.
+4. Run one of the following commands:
+
+   • Create a system snapshot:
+        `python flashguard-launcher.py snapshot`
+
+   • Validate a firmware payload (demo only):
+       ` python flashguard-launcher.py validate --payload samples/mock_firmware_payload.json`
+
+   • Create a restore plan:
+       ` python flashguard-launcher.py plan --xmp 3200 --boot YourDriveNameHere --rebar on`
+
+------------------------------------------------------------------------------------------------------------
+💡 In this prototype, the `--boot` value is only stored as text in the output plan.
+It does not change, write to, or interact with any drives.
+This is included only as a proof of concept showing how FlashGuard could
+remember your chosen boot device in a real version later.
+
+
+------------------------------------
+🧱 Notes
+------------------------------------
+- You can view results inside the "state" folder that appears after running it.
+- The snapshot and plan files are saved in readable JSON format.
+- This build is for demonstration and learning only.
+- A standalone .EXE version will be added in a future update.
+
+------------------------------------
+👤 Author
+------------------------------------
+Jon Merriman — Sync-First Essentials / SFG Framework
+All rights reserved © 2025
