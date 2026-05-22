@@ -1,5 +1,6 @@
 ## v01.1 (2026-05-22) - Changelog
 -------------------------------------------
+* Renamed it from SFG-FlashGuard v0.1 Prototype to current name
 * Updated README.md
 * Updated LICENSE
 * General Cleanup of the Repo
